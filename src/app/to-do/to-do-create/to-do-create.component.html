@@ -1,0 +1,18 @@
+<div class="centerDiv">
+  <div style="background-color : #008060;width:25em;text-align: center;padding-top: 7px"><h4 style = "color:white">Create ToDo Note :</h4><hr/></div>
+  
+  <div class="centerInnerDiv">
+      <br/>
+      <h6>Title: </h6>
+      <input [(ngModel)]="NewToDoItem.Label" />
+      <br/><br/>
+      <h6>Date: </h6>
+      <cdate-calender [(DateModel)] = "NewToDoItem.Date" (DateChange) = "OnDateChange($event)"></cdate-calender>
+      <!-- <ng-datepicker [(ngModel)]="NewToDoItem.Date" style="position: absolute;z-index:100;"></ng-datepicker> -->
+      <br/><br/>
+      <h6>Description: </h6>
+      <textarea [(ngModel)]="NewToDoItem.Description"></textarea>
+      <br/><br/>
+      <button (click) = AddNewToDo() class="btn btn-success">Add</button>
+  </div>
+</div>

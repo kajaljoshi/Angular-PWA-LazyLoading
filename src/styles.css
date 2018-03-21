@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~primeng/resources/primeng.min.css';
+@import '~primeng/resources/themes/omega/theme.css';
+
+.TopBar{
+    background-color: #669999;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.centerDiv {
+    position:fixed;
+    top: 40%;
+    left: 50%;
+    width:25em;
+    height: 30em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #c2d6d6;
+}
+.centerInnerDiv{
+    position: fixed;
+    margin-left: 8%;
+}
+
+.html{
+    background-color: #cccccc;
+}

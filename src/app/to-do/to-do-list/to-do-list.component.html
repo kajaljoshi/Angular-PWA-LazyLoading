@@ -1,0 +1,30 @@
+<h5 style="padding-left : 40px;">To-Do List for {{DateVar | date}}:</h5>
+<div class="clearfix"></div>
+<div style="padding-left : 150px;">
+    Select Date : &emsp; <cdate-calender [DateModel] = "DateVar" (DateChange) = "OnDateChange($event)" ></cdate-calender>
+    <!-- <p-calendar [(ngModel)]="DateVar" ></p-calendar> -->
+     <!-- <ng-datepicker [(ngModel)]="DateVar" style="position: absolute;z-index:100;"></ng-datepicker> -->
+</div>
+<hr/>
+<br/>
+<div class="row" style="padding-left : 50px;">
+    <div class="container">
+      <div class="card-columns">
+        <div *ngFor="let toDoItem of ToDoListItems | DateFilter : 'Date' : DateVar as FilterResult;let i = index">
+            <div class="card" [ngStyle]="{'background-color' : (i) % 3 == 0 ? '#ffd1b3' : (i + 1) % 3 == 2 ? '#ddff99' : '#b3c6ff'}">
+                <div class="card-header">
+                    {{toDoItem.Label}}
+                </div>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">{{toDoItem.Date}}</h6>
+                    <p class="card-text">{{toDoItem.Description}}</p>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="(ToDoListItems | DateFilter : 'Date' : DateVar).length == 0" class = "centerInnerDiv">
+              No Task Found for selected Date. 
+              To Create New Todo <a routerLink="/ToDoCreate">Click Here</a>.
+        </div>
+      </div>
+</div>
+
