@@ -1,6 +1,6 @@
-# PWADemo
+# Angular-PWA-LazyLoading
 
-A toDo List application is created using Angular-cli and Workbox with webpack is used to achieve PWA(Progressive Web App).
+A toDo List application Demo is created using Angular-cli and Workbox with webpack is used to achieve PWA(Progressive Web App).
 Features included in current applicatin to acheive PWA is :
 1) Lazy-Loading
 2) Offline support using service-worker(workbox)
@@ -8,7 +8,10 @@ Features included in current applicatin to acheive PWA is :
 
 ## Development server
 
-Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Download/clone repository and Run 
+  1. npm install
+  2.npm start 
+  for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
