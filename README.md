@@ -8,10 +8,11 @@ Features included in current applicatin to acheive PWA is :
 
 ## Development server
 
-Download/clone repository and Run 
+Download/clone repository and Run using follow commands for a dev server:
   1. npm install
-  2.npm start 
-  for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+  2. npm start 
+  
+  Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
